@@ -2,17 +2,12 @@
 
 ## Overview
 
-This script guides you through the process of transforming a rough idea into a detailed design document with an implementation plan and todo list. It follows the Prompt-Driven Development methodology to systematically refine your idea, conduct necessary research, create a comprehensive design, and develop an actionable implementation plan. The process is designed to be iterative, allowing movement between requirements clarification and research as needed.
+This script guides you through the process of transforming a rough idea into a detailed design document. It follows the Prompt-Driven Development methodology to systematically refine your idea, conduct necessary research, create a comprehensive design. The process is designed to be iterative, allowing movement between requirements clarification and research as needed.
 
 ## Parameters
 
 - **rough_idea** (required): The initial concept or idea you want to develop into a detailed design
 - **project_dir** (optional, default: "planning"): The base directory where all project files will be stored
-- **checkpointing** (optional, default: "false"): Enable progress checkpointing during implementation. Options:
-  - "false" or "none": No checkpointing (default)
-  - "notes-only" or "notes": Create checkpoint notes only
-  - "git-only" or "git": Create git commits only
-  - "both": Create both checkpoint notes and git commits
 
 **Constraints for parameter acquisition:**
 - You MUST ask for all required parameters upfront in a single prompt rather than one at a time
@@ -41,7 +36,6 @@ Set up a directory structure to organize all artifacts created during the proces
 - You MUST create the following subdirectories:
   - {project_dir}/research/ (directory for research notes)
   - {project_dir}/design/ (directory for design documents)
-  - {project_dir}/implementation/ (directory for implementation plans)
 - You MUST notify the user when the structure has been created
 - You MUST prompt the user to add all project files to Q's context using the command: `/context add {project_dir}/**/*.md`
 - You MUST explain that this will ensure all project files remain in context throughout the process
@@ -166,11 +160,10 @@ Provide a summary of all artifacts created and next steps.
 **Constraints:**
 - You MUST create a summary document at {project_dir}/summary.md
 - You MUST list all artifacts created during the process
-- You MUST provide a brief overview of the design and implementation plan
+- You MUST provide a brief overview of the design
 - You MUST suggest next steps for the user
 - You SHOULD highlight any areas that may need further refinement
 - You MUST present this summary to the user in the conversation
-- If checkpointing is enabled, You MUST include checkpoint guidance in the summary
 
 ## Examples
 
@@ -199,7 +192,7 @@ I notice you have several additional MCP search tools available beyond the stand
 
 # Project Summary
 
-I've completed the transformation of your rough idea into a detailed design with an implementation plan. Here's what was created:
+I've completed the transformation of your rough idea into a detailed design. Here's what was created:
 
 ## Directory Structure
 - docs/template-feature/
@@ -211,8 +204,6 @@ I've completed the transformation of your rough idea into a detailed design with
     - external-solutions.md
   - design/
     - detailed-design.md
-  - implementation/
-    - plan.md (includes implementation checklist)
   - summary.md (this document)
 
 ## Key Design Elements
@@ -222,15 +213,10 @@ I've completed the transformation of your rough idea into a detailed design with
 - Custom fields with validation
 - Document generation engine
 
-## Implementation Approach
-The implementation plan breaks down the work into 12 incremental steps, starting with core data models and building up to the complete feature set.
-
 ## Next Steps
 1. Review the detailed design document at docs/template-feature/design/detailed-design.md
-2. Check the implementation plan and checklist at docs/template-feature/implementation/plan.md
-3. Begin implementation following the checklist in the implementation plan
 
-Would you like me to explain any specific part of the design or implementation plan in more detail?
+Would you like me to explain any specific part of the design in more detail?
 ```
 
 ## Troubleshooting
@@ -253,5 +239,4 @@ If you cannot access needed information:
 If the design becomes too complex or unwieldy:
 - You SHOULD suggest breaking it down into smaller, more manageable components
 - You SHOULD focus on core functionality first
-- You MAY suggest a phased approach to implementation
 - You SHOULD return to requirements clarification to prioritize features if needed

@@ -6,7 +6,7 @@ I was blessed from my time at AWS to learn from lots of people on how to prompt 
 At AWS, we use Kiro-CLI, however the world at large obviously use Claude-Code. I will keep this directory as agent agnostic, however likely in the long term it will become all claude-code.
 
 ## TODO: 
-[ ] - Develop a script that can produce a properly formatted PRD for the various tasks
+[X] - Develop a script that can produce a properly formatted PRD for the various tasks
 [ ] - Develop a planning script that can be used to create tasks form said PRD
 [ ] - Develop a script Spin up agent for task management/ralph agent 
 
