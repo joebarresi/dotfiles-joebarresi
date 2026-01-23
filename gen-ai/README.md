@@ -7,7 +7,7 @@ At AWS, we use Kiro-CLI, however the world at large obviously use Claude-Code. I
 
 ## TODO: 
 [X] - Develop a script that can produce a properly formatted PRD for the various tasks
-[ ] - Develop a planning script that can be used to create tasks form said PRD
+[X] - Develop a planning script that can be used to create tasks form said PRD
 [ ] - Develop a script Spin up agent for task management/ralph agent 
 
 ## Aside
