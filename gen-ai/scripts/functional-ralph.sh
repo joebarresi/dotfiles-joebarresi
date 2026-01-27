@@ -296,6 +296,7 @@ while true; do
     if [ "$AGENT" = "kiro" ]; then
         echo "$PROMPT" | kiro-cli chat \
             --trust-all-tools \
+            --no-interactive \
             --verbose 2>&1 || {
                 echo -e "${RED}Kiro exited with error, continuing...${NC}"
             }
