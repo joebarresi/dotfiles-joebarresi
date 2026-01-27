@@ -1,4 +1,5 @@
 #!/bin/bash
+# Somewhat copied from someone else
 # Functional-Ralph - Autonomous AI Development Loop
 # Usage: functional-ralph <design-doc> <progress-file> [max-iterations] [--agent claude|kiro]
 #
@@ -9,7 +10,7 @@
 #
 # Exit conditions:
 #   - "FUNCTIONAL_RALPH_DONE" appears in progress file
-#   - Max iterations reached (if specified)
+#   - Max iterations reached (if specified) 
 #   - Ctrl+C
 
 set -euo pipefail
