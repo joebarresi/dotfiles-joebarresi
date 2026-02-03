@@ -6,6 +6,8 @@
   home.packages = [
     pkgs.eza
     pkgs.gh
+    pkgs.pipx
+    pkgs.python312
   ];
 
   # Powerlevel10k config file
@@ -59,7 +61,7 @@
 
       # General
       nuke = "sudo rm -rf node_modules";
-      rebuild = "darwin-rebuild switch --flake ~/.config/nix#80a9972b1e3d";
+      rebuild-nix = "sudo darwin-rebuild switch --flake ~/.config/nix#80a9972b1e3d";
       
       # Git
       gits = "git status";

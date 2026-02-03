@@ -27,11 +27,13 @@ nix/
 ## Task List
 
 ### Phase 1: Migrate Current Config
-- [ ] Add CLI tools from Brewfile to home.nix (eza, gh, neovim, etc.)
-- [ ] Add zsh config from dots/.zshrc
+- [x] Add CLI tools from Brewfile to home.nix (eza, gh, pipx, python312)
+- [x] Add zsh config from dots/.zshrc
+- [ ] Fix zsh plugins (syntax highlighting, autosuggestion, autocomplete not working)
 - [ ] Add VSCode settings + extensions
 - [ ] Add iTerm2 config
-- [ ] Add Homebrew casks (ghostty, raycast, etc.)
+- [x] Add Homebrew casks (raycast, jordanbaird-ice, google-chrome, iterm2, visual-studio-code, copilot-money; kiro for work profile)
+- [ ] Add non-Homebrew GUI apps (App Store, etc.)
 
 ### Phase 2: Modularize
 - [ ] Create `modules/` directory structure

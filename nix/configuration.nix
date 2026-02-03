@@ -11,11 +11,15 @@
   programs.zsh.enable = true;
 
   # GUI apps via Homebrew casks (nix-darwin manages Homebrew)
-  # homebrew = {
-  #   enable = true;
-  #   casks = [
-  #     "iterm2"
-  #   ];
-  #   onActivation.cleanup = "zap";
-  # };
+  homebrew = {
+    enable = true;
+    casks = [
+      "copilot-money"
+      "google-chrome"
+      "iterm2"
+      "jordanbaird-ice"
+      "raycast"
+      "visual-studio-code"
+    ];
+  };
 }
