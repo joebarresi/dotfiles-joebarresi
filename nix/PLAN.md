@@ -29,11 +29,11 @@ nix/
 ### Phase 1: Migrate Current Config
 - [x] Add CLI tools from Brewfile to home.nix (eza, gh, pipx, python312)
 - [x] Add zsh config from dots/.zshrc
-- [ ] Fix zsh plugins (syntax highlighting, autosuggestion, autocomplete not working)
-- [ ] Add VSCode settings + extensions
-- [ ] Add iTerm2 config
+- [ ] Fix zsh plugins (zsh-autocomplete real-time dropdown not working - nix package broken)
+- [x] Add VSCode settings + extensions
 - [x] Add Homebrew casks (raycast, jordanbaird-ice, google-chrome, iterm2, visual-studio-code, copilot-money; kiro for work profile)
-- [ ] Add non-Homebrew GUI apps (App Store, etc.)
+- [x] Add non-Homebrew GUI apps (flux-app added via Homebrew)
+- [x] Enable Touch ID for sudo
 
 ### Phase 2: Modularize
 - [ ] Create `modules/` directory structure
@@ -44,6 +44,7 @@ nix/
 - [ ] Extract macOS defaults to `modules/darwin/defaults.nix`
 
 ### Phase 3: Multi-Machine Support
+- [ ] Explain to Joe how this design will work and how he can put different modules in different places
 - [ ] Create `hosts/` directory
 - [ ] Create work machine config (`hosts/work.nix`)
 - [ ] Create personal machine config (`hosts/personal.nix`)
@@ -55,6 +56,7 @@ nix/
 - [ ] Add bootstrap script for new machines
 - [ ] Update README with setup instructions
 - [ ] Test on personal laptop
+- [ ] Make installed apps indexable by Spotlight
 
 ## Notes
 

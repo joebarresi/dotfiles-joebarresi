@@ -10,11 +10,15 @@
   # Enable zsh system-wide (required for home-manager zsh to work)
   programs.zsh.enable = true;
 
+  # Enable Touch ID for sudo
+  security.pam.services.sudo_local.touchIdAuth = true;
+
   # GUI apps via Homebrew casks (nix-darwin manages Homebrew)
   homebrew = {
     enable = true;
     casks = [
       "copilot-money"
+      "flux-app"
       "google-chrome"
       "iterm2"
       "jordanbaird-ice"
