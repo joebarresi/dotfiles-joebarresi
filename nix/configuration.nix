@@ -7,6 +7,9 @@
   # Enable nix command and flakes
   nix.enable = false;
 
+  # Enable zsh system-wide (required for home-manager zsh to work)
+  programs.zsh.enable = true;
+
   # GUI apps via Homebrew casks (nix-darwin manages Homebrew)
   # homebrew = {
   #   enable = true;

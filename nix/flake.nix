@@ -7,10 +7,7 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs@{ self, nix-darwin, home-manager, nixpkgs }: 
-    let
-      lib = nixpkgs.lib;
-    in {
+  outputs = inputs@{ self, nix-darwin, home-manager, nixpkgs }: {
     darwinConfigurations."80a9972b1e3d" = nix-darwin.lib.darwinSystem {
       modules = [
         ./configuration.nix
@@ -18,12 +15,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.jbarresi = { pkgs, lib, ... }: {
-            home.username = "jbarresi";
-            home.homeDirectory = lib.mkForce "/Users/jbarresi";
-            home.stateVersion = "24.05";
-            home.packages = [];
-          };
+          home-manager.users.jbarresi = import ./home.nix;
         }
       ];
     };
