@@ -8,11 +8,11 @@
   nix.enable = false;
 
   # GUI apps via Homebrew casks (nix-darwin manages Homebrew)
-  homebrew = {
-    enable = true;
-    casks = [
-      "iterm2"
-    ];
-    onActivation.cleanup = "zap";
-  };
+  # homebrew = {
+  #   enable = true;
+  #   casks = [
+  #     "iterm2"
+  #   ];
+  #   onActivation.cleanup = "zap";
+  # };
 }

@@ -11,7 +11,7 @@
     let
       lib = nixpkgs.lib;
     in {
-    darwinConfigurations."Work-Mac" = nix-darwin.lib.darwinSystem {
+    darwinConfigurations."80a9972b1e3d" = nix-darwin.lib.darwinSystem {
       modules = [
         ./configuration.nix
         home-manager.darwinModules.home-manager
