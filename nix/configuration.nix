@@ -1,4 +1,8 @@
 { pkgs, ... }: {
+  imports = [
+    ./modules/darwin/homebrew.nix
+  ];
+
   # Required for nix-darwin
   system.stateVersion = 5;
   system.primaryUser = "jbarresi";
@@ -12,21 +16,4 @@
 
   # Enable Touch ID for sudo
   security.pam.services.sudo_local.touchIdAuth = true;
-
-  # GUI apps via Homebrew casks (nix-darwin manages Homebrew)
-  homebrew = {
-    enable = true;
-    brews = [
-      "zsh-autocomplete"
-    ];
-    casks = [
-      "copilot-money"
-      "flux-app"
-      "google-chrome"
-      "iterm2"
-      "jordanbaird-ice"
-      "raycast"
-      "visual-studio-code"
-    ];
-  };
 }

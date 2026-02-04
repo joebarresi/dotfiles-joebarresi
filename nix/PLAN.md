@@ -38,8 +38,7 @@ nix/
 ### Phase 2: Modularize
 - [x] Create `modules/` directory structure
 - [x] Extract shell config to `modules/home/shell.nix`
-- [ ] Extract git config to `modules/home/git.nix`
-- [ ] Extract VSCode config to `modules/home/vscode.nix`
+- [x] Extract VSCode config to `modules/home/vscode.nix`
 - [ ] Extract Homebrew to `modules/darwin/homebrew.nix`
 - [ ] Extract macOS defaults to `modules/darwin/defaults.nix`
 
