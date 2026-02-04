@@ -39,17 +39,17 @@ nix/
 - [x] Create `modules/` directory structure
 - [x] Extract shell config to `modules/home/shell.nix`
 - [x] Extract VSCode config to `modules/home/vscode.nix`
-- [ ] Extract Homebrew to `modules/darwin/homebrew.nix`
-- [ ] Extract macOS defaults to `modules/darwin/defaults.nix`
+- [x] Extract Homebrew to `modules/darwin/homebrew.nix`
+- [x] Investigate current macOS settings to extract to `modules/darwin/defaults.nix`
 
 ### Phase 3: Multi-Machine Support
-- [ ] Explain to Joe how this design will work and how he can put different modules in different places
-- [ ] Create `hosts/` directory
-- [ ] Create work machine config (`hosts/work.nix`)
-- [ ] Create personal machine config (`hosts/personal.nix`)
-- [ ] Create `profiles/work.nix` for work-specific tools (amazon taps, brazil, etc.)
-- [ ] Create `profiles/personal.nix` for personal tools
-- [ ] Update flake.nix to support multiple darwinConfigurations
+- [x] Explain to Joe how this design will work and how he can put different modules in different places
+- [x] Create `hosts/` directory
+- [x] Create amazon machine config (`hosts/amazon.nix`)
+- [x] Create personal machine config (`hosts/personal.nix`)
+- [x] Create `profiles/amazon.nix` for amazon-specific tools (amazon taps, brazil, etc.)
+- [x] Create `profiles/personal.nix` for personal tools
+- [x] Update flake.nix to support multiple darwinConfigurations
 
 ### Phase 4: Polish
 - [ ] Add bootstrap script for new machines
