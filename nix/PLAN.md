@@ -36,8 +36,8 @@ nix/
 - [x] Enable Touch ID for sudo
 
 ### Phase 2: Modularize
-- [ ] Create `modules/` directory structure
-- [ ] Extract shell config to `modules/home/shell.nix`
+- [x] Create `modules/` directory structure
+- [x] Extract shell config to `modules/home/shell.nix`
 - [ ] Extract git config to `modules/home/git.nix`
 - [ ] Extract VSCode config to `modules/home/vscode.nix`
 - [ ] Extract Homebrew to `modules/darwin/homebrew.nix`
