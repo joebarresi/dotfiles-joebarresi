@@ -28,9 +28,14 @@
   programs.zsh = {
     enable = true;
     
-    autosuggestion.enable = true;
+    autosuggestion.enable = false;
     syntaxHighlighting.enable = false;
     enableCompletion = false;
+
+    oh-my-zsh = {
+      enable = true;
+      plugins = [ "git" ];
+    };
 
     plugins = [
       {
@@ -39,14 +44,24 @@
         file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
       }
       {
-        name = "git";
-        src = pkgs.oh-my-zsh;
-        file = "share/oh-my-zsh/plugins/git/git.plugin.zsh";
+        name = "zsh-autosuggestions";
+        src = pkgs.zsh-autosuggestions;
+        file = "share/zsh-autosuggestions/zsh-autosuggestions.zsh";
       }
       {
         name = "fast-syntax-highlighting";
         src = pkgs.zsh-fast-syntax-highlighting;
         file = "share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh";
+      }
+      {
+        name = "zsh-autocomplete";
+        src = pkgs.fetchFromGitHub {
+          owner = "marlonrichert";
+          repo = "zsh-autocomplete";
+          rev = "25.03.19";
+          sha256 = "sha256-eb5a5WMQi8arZRZDt4aX1IV+ik6Iee3OxNMCiMnjIx4=";
+        };
+        file = "zsh-autocomplete.plugin.zsh";
       }
     ];
 
@@ -58,12 +73,6 @@
     '';
 
     initExtra = ''
-      # Keybindings
-      bindkey '\e[A' up-line-or-history
-      bindkey '\eOA' up-line-or-history
-      bindkey '\e[B' down-line-or-history
-      bindkey '\eOB' down-line-or-history
-
       # NVM
       export NVM_DIR="$HOME/.nvm"
       [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"

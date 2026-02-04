@@ -16,6 +16,9 @@
   # GUI apps via Homebrew casks (nix-darwin manages Homebrew)
   homebrew = {
     enable = true;
+    brews = [
+      "zsh-autocomplete"
+    ];
     casks = [
       "copilot-money"
       "flux-app"

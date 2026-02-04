@@ -29,7 +29,7 @@ nix/
 ### Phase 1: Migrate Current Config
 - [x] Add CLI tools from Brewfile to home.nix (eza, gh, pipx, python312)
 - [x] Add zsh config from dots/.zshrc
-- [ ] Fix zsh plugins (zsh-autocomplete real-time dropdown not working - nix package broken)
+- [x] Fix zsh plugins (zsh-autocomplete - fetched from GitHub instead of broken nix package)
 - [x] Add VSCode settings + extensions
 - [x] Add Homebrew casks (raycast, jordanbaird-ice, google-chrome, iterm2, visual-studio-code, copilot-money; kiro for work profile)
 - [x] Add non-Homebrew GUI apps (flux-app added via Homebrew)
