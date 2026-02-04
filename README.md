@@ -11,6 +11,13 @@ Nix-darwin + home-manager configuration supporting multiple machines.
 
 ## Setup
 
+### Quick Start (New Machine)
+```
+curl -sL https://raw.githubusercontent.com/joebarresi/dotfiles-jbarresi/main/bootstrap.sh | bash
+```
+
+### Manual Setup
+
 ### Step 1: Install Nix
 ```
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install

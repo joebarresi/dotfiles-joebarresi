@@ -52,8 +52,8 @@ nix/
 - [x] Update flake.nix to support multiple darwinConfigurations
 
 ### Phase 4: Polish
-- [ ] Add bootstrap script for new machines
-- [ ] Update README with setup instructions
+- [x] Add bootstrap script for new machines
+- [x] Update README with setup instructions
 - [ ] Test on personal laptop
 - [ ] Make installed apps indexable by Spotlight
 
