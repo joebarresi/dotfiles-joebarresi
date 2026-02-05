@@ -13,7 +13,7 @@ Nix-darwin + home-manager configuration supporting multiple machines.
 
 ### Quick Start (New Machine)
 ```
-curl -sL https://raw.githubusercontent.com/joebarresi/dotfiles-jbarresi/main/bootstrap.sh | bash
+curl -sL https://raw.githubusercontent.com/joebarresi/dotfiles-joebarresi/main/bootstrap.sh | bash
 ```
 
 ### Manual Setup
@@ -25,12 +25,12 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix 
 
 ### Step 2: Clone this repo
 ```
-git clone <repo-url> ~/personal-projects/dotfiles-jbarresi
+git clone <repo-url> ~/personal-projects/dotfiles-joebarresi
 ```
 
 ### Step 3: Build and switch
 ```
-sudo darwin-rebuild switch --flake ~/personal-projects/dotfiles-jbarresi/nix
+sudo darwin-rebuild switch --flake ~/personal-projects/dotfiles-joebarresi/nix
 ```
 
 The flake auto-detects your hostname and applies the correct config.

@@ -3,7 +3,7 @@ set -e
 
 echo "🚀 Bootstrapping nix-darwin + home-manager..."
 
-DOTFILES_DIR="$HOME/personal-projects/dotfiles-jbarresi"
+DOTFILES_DIR="$HOME/personal-projects/dotfiles-joebarresi"
 
 # Install Nix
 if ! command -v nix &> /dev/null; then
@@ -17,7 +17,7 @@ fi
 if [ ! -d "$DOTFILES_DIR" ]; then
   echo "📂 Cloning dotfiles..."
   mkdir -p "$HOME/personal-projects"
-  git clone https://github.com/joebarresi/dotfiles-jbarresi.git "$DOTFILES_DIR"
+  git clone https://github.com/joebarresi/dotfiles-joebarresi.git "$DOTFILES_DIR"
 fi
 
 cd "$DOTFILES_DIR/nix"

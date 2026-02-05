@@ -69,7 +69,7 @@
     shellAliases = {
       general = "echo 'You are the Man'";
       nuke = "sudo rm -rf node_modules";
-      rebuild-nix = "sudo darwin-rebuild switch --flake ~/personal-projects/dotfiles-jbarresi/nix";
+      rebuild-nix = "sudo darwin-rebuild switch --flake ~/personal-projects/dotfiles-joebarresi/nix";
       gits = "git status";
       gitb = "git branch";
       gitc = "git checkout";
