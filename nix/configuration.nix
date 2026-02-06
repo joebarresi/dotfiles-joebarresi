@@ -15,6 +15,8 @@
   # Enable zsh system-wide (required for home-manager zsh to work)
   programs.zsh.enable = true;
 
+  environment.systemPath = [ "/opt/homebrew/bin" ];
+
   # Enable Touch ID for sudo
   security.pam.services.sudo_local.touchIdAuth = true;
 }

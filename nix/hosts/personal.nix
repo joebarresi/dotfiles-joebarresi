@@ -2,7 +2,7 @@
   imports = [
     ../modules/darwin/homebrew.nix
     ../modules/darwin/defaults.nix
-    ../profiles/personal.nix
+    ../profiles/darwin/personal.nix
   ];
 
   system.stateVersion = 5;
@@ -12,4 +12,6 @@
   nix.enable = false;
   programs.zsh.enable = true;
   security.pam.services.sudo_local.touchIdAuth = true;
+
+  environment.systemPath = [ "/opt/homebrew/bin" ];
 }

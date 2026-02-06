@@ -2,7 +2,7 @@
   imports = [
     ../modules/darwin/homebrew.nix
     ../modules/darwin/defaults.nix
-    ../profiles/amazon.nix
+    ../profiles/darwin/amazon.nix
   ];
 
   system.stateVersion = 5;

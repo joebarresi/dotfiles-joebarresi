@@ -7,3 +7,5 @@ After installing using NIX here is what we noticed
 - direction to generate a token for git
 - home brew gets installed before we use it
 - add git config for my labtop
+- automate adding github ?
+- have homebrew available
